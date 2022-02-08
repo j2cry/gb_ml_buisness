@@ -28,11 +28,11 @@ def prepare_prediction_system():
     global model
 
     logger.info('Loading data preparation pipeline...')
-    with open('prepare_pipeline.cpkl', 'rb') as pf:
+    with open('models/prepare_pipeline.cpkl', 'rb') as pf:
         pipeline = pickle.load(pf)
 
     logger.info('Loading model...')
-    with open('model.cpkl', 'rb') as pf:
+    with open('models/model.cpkl', 'rb') as pf:
         model = pickle.load(pf)
 
 
