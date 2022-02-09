@@ -113,9 +113,4 @@ if __name__ == '__main__':
 
     pipeline, model = prepare_prediction_system()
     logger.info('Running HTTP server...')
-    if settings.PRIVATE_KEY and settings.CERTIFICATE:
-        # run with TLS
-        serve(app, host="0.0.0.0", port=settings.PORT, keyfile=settings.PRIVATE_KEY, certfile=settings.CERTIFICATE)
-    else:
-        # run without TLS: data is not encrypted!
-        serve(app, host="0.0.0.0", port=settings.PORT)
+    serve(app, host="0.0.0.0", port=settings.PORT)

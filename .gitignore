@@ -3,3 +3,4 @@
 /__pycache__/
 /modeling/mvenv/
 /modeling/alice-sub.csv
+service.log
