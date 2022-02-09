@@ -1,3 +1,5 @@
 /venv/
 /.idea/
 /__pycache__/
+/modeling/mvenv/
+/modeling/alice-sub.csv

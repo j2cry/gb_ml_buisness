@@ -1,4 +1,10 @@
-.idea/
-__pycache__/
-venv/
-dockerfile
+/.idea/
+/.git
+/.gitignore
+/__pycache__/
+/venv/
+/modeling/
+!/modeling/train_data/source/
+!/modeling/train_data/site_dic.pkl
+/dockerfile
+/readme.md
