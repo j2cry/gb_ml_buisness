@@ -3,6 +3,7 @@
 /.gitignore
 /__pycache__/
 /venv/
+/homeworks/
 /modeling/
 !/modeling/train_data/source/
 !/modeling/train_data/site_dic.pkl
