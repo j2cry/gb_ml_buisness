@@ -1,0 +1,17 @@
+version: "3"
+services:
+  alice-predict:
+    image: alice_img
+    container_name: alice
+    expose:
+      - 55401
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.alice-predict.rule=PathPrefix(`/alice-predict`)
+#      - "traefik.http.routers.alice-predict.rule=Host(`alice.fragarie.dev`) || PathPrefix(`/alice-predict`)"
+    networks:
+      - revproxy
+
+networks:
+  revproxy:
+    external: true

@@ -10,7 +10,7 @@ from flask_cors import CORS, cross_origin
 from waitress import serve
 
 srv_URL = settings.SERVICE_URL if settings.SERVICE_URL else '/'
-app = Flask(__name__)
+app = Flask(__name__, static_url_path=srv_URL + '/static')
 cors = CORS(app, resources={srv_URL: {'origins': '*'}})
 app.config['SECRET_KEY'] = settings.SECRET_KEY
 app.config['CORS_HEADERS'] = 'Content-Type'
