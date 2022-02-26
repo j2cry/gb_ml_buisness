@@ -17,5 +17,3 @@ docker run -p 80:55401 alice_img
 ```
 docker-compose -f alice-compose.yml up -d
 ```
-Password for traefik can be genereted here: https://www.htaccessredirect.net/htpasswd-generator
-

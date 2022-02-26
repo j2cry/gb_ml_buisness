@@ -9,9 +9,3 @@ services:
       - traefik.enable=true
       - traefik.http.routers.alice-predict.rule=PathPrefix(`/alice-predict`)
 #      - "traefik.http.routers.alice-predict.rule=Host(`alice.fragarie.dev`) || PathPrefix(`/alice-predict`)"
-    networks:
-      - revproxy
-
-networks:
-  revproxy:
-    external: true
